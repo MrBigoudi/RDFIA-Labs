@@ -5,8 +5,8 @@
 ### Q1
 
 $$outSize = 1*1*((x-k+2p)/s+1)*((y-k+2p)/s+1)$$
-$$nbWeights = k*k*z (+1 \textit{bias}$$
-$$nbWeightsFull = (x*y*z)*outSize$$
+$$nbWeights = k*k*z (+1) \textit{bias}$$
+$$nbWeightsFull = (x*y*z + 1)*outSize$$
 
 ### Q2
 
@@ -126,7 +126,7 @@ It still overfits but a bit later.
 
 ### Q20 
 
-Validation is used for testing the model. When we willl test on unknown data, we won't use their mean value either. So to test the model properly, we have to consider our validation set as a real test set and then not use their values to compute the mean and standard deviation of the dataset.
+Validation is used for testing the model. When we will test on unknown data, we won't use their mean value either. So to test the model properly, we have to consider our validation set as a real test set and then not use their values to compute the mean and standard deviation of the dataset.
 
 ### Q21
 
